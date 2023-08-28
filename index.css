@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100;200;300;400;500;600&family=Lexend:wght@100;200;300;400;500;600;700;800&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    width: 100%;
+    padding: 0 30px;
+}
+.columns{
+    width: 100%;
+    display: flex;
+    margin:20% 0;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.columns button{
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin: 25px 0;
+    font-size: 17px;
+}
+.columns button:hover{
+    background-color: transparent;
+    border: 2px solid white;
+    transition: 0.5s ease-in;
+    color: white;
+}
+.columns img{
+    margin-top: 20px;
+}
+.columns h2{
+    font-family: 'Big Shoulders Display', cursive;
+    color: white;
+    font-weight: 500;
+    font-size: 35px;
+    margin: 20px 0;
+}
+.columns p{
+    color: white;
+    font-size: 15px;
+    font-family: 'Lexend', sans-serif;
+    font-weight: 100;
+    width: 90%;
+    letter-spacing: 1px;
+    line-height: 25px;
+    margin-top: 25px;
+}
+.sedans{
+    background-color: hsl(31, 77%, 52%);
+}
+.sedans button{
+    color: hsl(31, 77%, 52%);
+}
+.suv{
+    background-color: hsl(184, 100%, 22%);
+}
+.suv button{
+    color: hsl(184, 100%, 22%);
+}
+.luxury{
+    background-color: hsl(179, 100%, 13%);
+}
+.luxury button{
+    color: hsl(179, 100%, 13%);
+}
+.sedans,.suv,.luxury{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 30px;
+    overflow: hidden;
+}
+@media screen and (min-width:900px) {
+    .columns{
+        flex-direction: row;
+        height: 100%;
+        margin:10% 0;
+        overflow: hidden;
+    }
+    .columns p{
+        width: 65%;
+        line-height: 30px;
+        margin: 30px 0;
+    }
+
+}
+
+
+.attribution{
+    font-family: sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+a{
+    color: hsl(184, 100%, 22%);
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Lexend', sans-serif;
+}
